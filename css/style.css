@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f7f9;
-    margin: 0;
+    margin: -20px;
     padding: 0;
 }
 
@@ -15,7 +15,6 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 0px -5%;
     background-color: white;
 }
 
@@ -30,10 +29,14 @@ header h1 {
 }
 
 .task-controls {
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
-    justify-content: center;
     gap: 10px;
+    background-color: white;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .add-task,
@@ -44,4 +47,83 @@ header h1 {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.task-list {
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.task {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: flex-start;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.status {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.status.done {
+    background-color: green;
+    color: white;
+}
+
+.status.not-done {
+    background-color: red;
+    color: white;
+}
+
+.tag {
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.tag.editorial {
+    background-color: #007bff;
+    margin: 10px;
+}
+
+.tag.q1-goals {
+    background-color: #9b59b6;
+}
+
+.tag.recruiting {
+    background-color: #1abc9c;
+}
+
+.tag.mobile {
+    background-color: #e67e22;
+}
+
+.tag.website {
+    background-color: #e84393;
+}
+
+.tag.sales {
+    background-color: #f1c40f;
 }
